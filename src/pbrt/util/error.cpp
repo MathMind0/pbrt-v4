@@ -72,7 +72,8 @@ void ErrorExit(const FileLoc *loc, const char *message) {
 #ifdef PBRT_IS_OSX
     exit(1);
 #else
-    std::quick_exit(1);
+    //std::quick_exit(1);
+    std::exit(1);
 #endif
 }
 
